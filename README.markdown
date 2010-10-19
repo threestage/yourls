@@ -1,12 +1,12 @@
 # Yourls
 
-YOURLS is an open-source, PHP url-shortening service.
+[YOURLS](http://yourls.org) is an open-source, PHP url-shortening service.
 
-# Installation
+## Installation
 
     gem install yourls
 
-# Usage
+## Usage
 
 Create a Yourls client using your hostname and api key as follows:
 
@@ -26,6 +26,6 @@ You can then interact with the client to shorten or expand urls or to get statis
     url.long_url #=> "http://www.google.com"
     url.keyword #=> "goog"
 
-# Copyright
+## Copyright
 
 Copyright (c) 2010 [Three Stage Media, Inc.](http://www.threestage.com) and licensed under the MIT License (see MIT-LICENSE for details).
