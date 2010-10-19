@@ -15,7 +15,7 @@ Create a Yourls client using your hostname and api key as follows:
 You can then interact with the client to shorten or expand urls or to get statistics about your service:
 
     yourls.shorten('http://www.google.com')
-    yourls.shorten('http://www.google.com, :keyword => 'goog') # Creates a custom keyword url
+    yourls.shorten('http://www.google.com', :keyword => 'goog') # Creates a custom keyword url
     yourls.expand('goog')
     yourls.stats
 
@@ -25,3 +25,7 @@ You can then interact with the client to shorten or expand urls or to get statis
     url.short_url #=> "http://your-service/goog"
     url.long_url #=> "http://www.google.com"
     url.keyword #=> "goog"
+
+# Copyright
+
+Copyright (c) 2010 [Three Stage Media, Inc.](http://www.threestage.com) and licensed under the MIT License (see MIT-LICENSE for details).
