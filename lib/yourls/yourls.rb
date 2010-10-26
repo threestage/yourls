@@ -1,6 +1,6 @@
 module Yourls
-  def self.new(host, api_key)
-    Yourls::Client.new(host, api_key)
+  def self.new(host, api_key, options = {})
+    Yourls::Client.new(host, api_key, options)
   end
 end
 

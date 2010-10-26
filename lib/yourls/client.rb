@@ -4,9 +4,10 @@ module Yourls
   class Client
     include HTTParty
 
-    def initialize(host, api_key)
+    def initialize(host, api_key, options = {})
       @host, @api_key = host, api_key
       @base_uri = File.join(host, 'yourls-api.php')
+      @server_offset = options[:offset] || 0.seconds
     end
 
     def stats(options = {})
@@ -24,7 +25,7 @@ module Yourls
 
     def get(action, query = {})
       # Prepare the signature
-      timestamp = Time.now.to_i
+      timestamp = (Time.now + @server_offset).to_i
       signature = Digest::MD5.hexdigest(timestamp.to_s + @api_key)
 
       query ||= {}
