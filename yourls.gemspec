@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.summary = 'Use the Yourls API to shorten or expand URLs'
   s.description = 'Use the Yourls API to shorten or expand URLs'
   
-  s.files = ["yourls.gemspec", "lib/yourls.rb", "lib/yourls/yourls.rb", "lib/yourls/client.rb", "lib/yourls/url.rb", "README"]
+  s.files = ["yourls.gemspec", "lib/yourls.rb", "lib/yourls/yourls.rb", "lib/yourls/client.rb", "lib/yourls/url.rb", "README.markdown", "MIT-LICENSE"]
   s.require_paths = ["lib"]
 
   if s.respond_to? :specification_version then
