@@ -7,7 +7,7 @@ module Yourls
     def initialize(host, api_key, options = {})
       @host, @api_key = host, api_key
       @base_uri = File.join(host, 'yourls-api.php')
-      @server_offset = options[:offset] || 0.to_i
+      @server_offset = options[:offset] || 0.seconds
     end
 
     def stats(options = {})
